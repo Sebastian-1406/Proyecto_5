@@ -6,11 +6,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.header{ 
-
-
-}
-
 
 .nav{
     display: flex;
@@ -31,6 +26,10 @@
     text-decoration: none;
     font-size: 14px;
     color: hsl(192, 100%, 9%);
+}
+
+.header{
+    background-color: hsl(193, 100%, 96%);
 
 }
 
@@ -65,7 +64,8 @@
     display: flex;
     flex-direction: column;
     gap: 2em ;
-    padding: 1em;
+    padding: 2em 1em 10em 1em;
+    position: relative;
 }
 .card__contenido{
     display: flex;
@@ -75,7 +75,7 @@
 
 .card{
     padding: 2em;
-    box-shadow: 0px 0px 7px 0px rgb(0, 0 ,0 ,0.4);
+    box-shadow: 0px 0px 5px 0px rgb(0, 0 ,0 ,0.3);
     border-radius: 8px;
 }
 .card__titulo{
@@ -84,6 +84,7 @@
 }
 .card__parrafo{
     text-align: center;
+    font-size: 14px;
 }
 .card__imagen{
     width: 90%;
@@ -91,13 +92,15 @@
 }
 
 .tarjeta{
-    border: solid 1px black;
     padding: 2em 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
     border-radius: 15px;
+    position: absolute;
+    bottom: -60px;
+    background-color: white;
 }
 .tarjeta__titulo{
     font-size: 18px;
@@ -122,7 +125,46 @@
 
 .footer{
     background-color: hsl(192, 100%, 9%);
-    padding: 1em;
+    padding: 7em 1em 1em 1em;
+    color: #eeee;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer__imagen{
+    margin: 1em 0;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.contacto__contenido{
+    display: flex;
+    gap: 1em;
+}
+.contacto__imagen{
+    width: 20px;
+    height: 20px;
 }
 
+.footer__lista{
+    list-style: none;
+    margin: 3em 0;
+}
+.footer__item{
+    display: block;
+    margin: 1em 0;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.fab{
+    display: inline-block;
+    padding: 8px;
+    border: solid 1px #eee;
+    border-radius: 50%;
+}
 
